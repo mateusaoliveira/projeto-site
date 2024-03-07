@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --cor0: #F2E3D5;
+    --cor1: #3CA6A6;
+    --cor2: #026773;
+    --cor3: #024959;
+    --cor4: #012E40;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-historia: 'Dancing', cursive
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+}
+
+header h1 {
+    color: white;
+    padding: 10px 10px 40px 10px;
+}
+
+header a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+header a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+main {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    margin: auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+}
+
+main #principal {
+    height: 330px;
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.301);
+}
+
+main h2 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.301);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.301);
+}
+
+main h3 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: white;
+    font-family: var(--fonte-padrao);
+    padding: 15px 0px 15px 10px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.301);
+}
+
+main p {
+    color: white;
+    font-family: var(--fonte-historia);
+    text-align: justify;
+    margin: 15px;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.links {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: white;
+    padding: 20px;
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    color: var(--cor4);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+footer p {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
